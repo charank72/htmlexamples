@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="search">Search</label>
+    <input type="search" id="search" name="search">
+    <p></p>
+    <label>Range</label>
+    <input type="range" id="num" min="0" step="5" max="100" value="50" onchange="getValue()" style="width: 100%;">
+    <strong id="output"></strong>
+    <p></p>
+    <label>color</label>
+    <input type="color">
+  </form>
+  <script>
+    function getValue(){
+      var x=document.getElementById("num").value;
+      document.getElementById("output").innerText=x;
+    }
+    getValue();
+  </script>
+</body>
+</html>

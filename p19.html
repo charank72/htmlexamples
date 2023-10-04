@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <form method="post" action="">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required placeholder="Enter Full Name" autofocus>
+    </div>
+    <div>
+      <label for="father">
+        Enter Father's Name
+      </label> 
+      <input type="text" name="father" id="" required placeholder="Enter Father's Name">
+    </div>
+    <div>
+      <label>Enter Mother's Name</label>
+      <input type="text" name="mother" id="mother" required placeholder="Enter Mother's Name" >
+    </div>
+    <div>
+      <label>
+        Enter Mobile Number
+      </label>
+      <input type="number" name="mob" id="mob" required placeholder="Enter Mobile Number">
+    </div>
+    <div>
+      <label for="email">
+        Enter Email
+      </label>
+      <input type="email" id="email" name="email" required placeholder="Enter Your Email">
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <main>
+        <input type="radio" name="gender" id="gender" required>Male<input type="radio" name="gender" id="gender" required>Female<input type="radio" name="gender" id="gender" required>Others
+      </main>
+    </div>
+    <div>
+      <label for="dob">DOB</label>
+      <input type="date" required>
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <textarea cols="30" rows="9" name="address" id="address"></textarea>
+    </div>
+    <div>
+      <label for="blood group">Blood Group</label>
+      <select>
+        <option>Select Your Blood Group</option>
+        <option>A+</option>
+        <option>B+</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+      </select>
+    </div>
+    <div>
+      <label for="dep">Department</label>
+      <main>
+        <input type="radio" name="dep">CSE<input type="radio" name="dep">ECE<input type="radio" name="dep">MECH<input type="radio" name="dep">CIVIL
+      </main>
+    </div>
+    <div>
+      <label for="course">Course</label>
+      <main>
+        <input type="checkbox" name="course" value="c" >C
+        <input type="checkbox" name="course" value="c++" >C++
+        <input type="checkbox" name="course" value="java" >JAVA
+        <input type="checkbox" name="course" value="python" >PYTHON
+        <input type="checkbox" name="course" value="ai" >AI
+        <input type="checkbox" name="course" value="robotics" >ROBOTICS
+      </main>
+    </div>
+    <div>
+      <label for="photo">photo</label>
+      <input type="file" name="photo" required>
+    </div>
+    <div>
+      <input class="green" type="submit">
+      <input class="red" type="reset">
+    </div>
+  </form>
+</body>
+</html>

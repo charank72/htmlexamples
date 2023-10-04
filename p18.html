@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      width: 900px;
+    }
+    table,tr,th,td{
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+    td,th{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body align="center">
+  <h1>Registration Form</h1>
+  <form method="post" enctype="multipart/form-data" autocomplete="off">
+    <table align="center">
+      <tr>
+        <th>Enter your first name</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>Enter Last Name</th>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <th>Enter Your Password</th>
+        <td><input type="password" required></td>
+      </tr>
+      <tr>
+        <th>ReEnter your pass</th>
+        <td><input type="password" required></td>
+      </tr>
+      <tr>
+        <th>EMAIL</th>
+        <td><input type="email" required></td>
+      </tr>
+      <tr>
+        <th>Enter Your Mobile Number</th>
+        <td><input type="number" required></td>
+      </tr>
+      <tr>
+        <th>Enter Your Address</th>
+        <td><textarea cols="22" rows="7"></textarea></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td><label><input type="radio" name="gen">Male</label>
+          <input type="radio" name="gen">Female</td>
+      </tr>
+      <tr>
+        <th>Select Your Hobbies</th>
+        <td>
+          <label for="hobby">
+            hobbies1<input type="checkbox" name="hobby" value="cycling">
+          </label><br>
+          <label for="hobby2">
+            hobbies2<input type="checkbox" name="hobby2" value="swimming" >
+          </label><br>
+         <label for="hobby3">
+          hobbies3<input type="checkbox" value="reading books" name="hobby3" >
+         </label>
+
+        </td>
+      </tr>
+      <tr>
+        <th>Select Your DOB</th>
+        <td><input type="date" required></td>
+      </tr>
+      <tr>
+        <th>Select your country</th>
+        <td>
+          <select name="" id="" >
+            <option value="null">Choose your country</option>
+            <option value="ind">india</option>
+            <option value="nep">nepal</option>
+            <option value="bhu">bhutan</option>
+            <option value="other">other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Upload your picture</th>
+        <td><input type="file" id="" name="" required</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" id="" name="" value="Save My Data">
+          <input type="reset" id="" name="" value="Reset Data">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
